@@ -41,6 +41,9 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "publishConfig": {
+    "registry":"https://registry.npmjs.org/"
+  },
   "lint-staged": {
     "*.js": [
       "eslint --fix",
