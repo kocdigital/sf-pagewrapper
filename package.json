@@ -1,0 +1,50 @@
+{
+  "name": "@kocdigital/sf-pagewrapper",
+  "version": "1.0.0",
+  "description": "wrap a sf component as a web component. fork from vue wrapper",
+  "main": "dist/sf-wc-wrapper.js",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "vue",
+    "web-component"
+  ],
+  "author": "Özgür Çimen",
+  "license": "MIT",
+  "homepage": "https://github.com/kocdigital/sf-pagewrapper#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kocdigital/sf-pagewrapper.git"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-plugin-vue-libs": "^2.1.0",
+    "http-server": "^0.11.1",
+    "jest": "^22.1.4",
+    "lint-staged": "^6.1.0",
+    "puppeteer": "^1.0.0",
+    "rollup": "^0.55.3",
+    "vue": "^2.5.13",
+    "yorkie": "^1.0.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": "plugin:vue-libs/recommended"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
