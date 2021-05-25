@@ -1,6 +1,6 @@
 {
   "name": "@kocdigital/sf-pagewrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wrap a sf component as a web component. fork from vue wrapper",
   "main": "dist/sf-wc-wrapper.js",
   "private": false,
